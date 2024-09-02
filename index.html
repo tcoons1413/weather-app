@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="icon" href="assets/icon.svg">
+</head>
+
+<body class="flex flex-col justify-center min-h-screen min-w-screen items-center font-[sans-serif]">
+    <div id="bg"
+        class="max-w-screen-sm min-w-[430px] min-h-[932px] bg-[url('assets/kenrick-mills-1h2Pg97SXfA-unsplash.jpg')]">
+        <section class="flex flex-col my-8 items-center">
+            <h1 class="text-3xl">Toronto</h1>
+            <h2 class="text-7xl"><span style="opacity: 0;">&deg;</span>30&deg;</h2>
+
+
+            <p>Type of day</p>
+            <div class="flex gap-2 justify-center">
+                <p>H: 30&deg;</p>
+                <p>L: 30&deg;</p>
+            </div>
+
+        </section>
+
+        <section class="flex flex-col">
+            <div
+                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto bg-opacity-30 text-black-100">
+                <div class="p-2">
+                    <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                        Sed auctor auctor
+                        arcu, at fermentum dui. Maecenas</p>
+                </div>
+                <div class="flex gap-5 overflow-x-scroll mx-2 scrollbar-hide text-center">
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p>Time</p>
+                        <p>⛅</p>
+                        <p>30&deg;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div
+                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-2 bg-opacity-30 text-black-100 flex flex-col pb-2">
+                <div class="my-6 mx-3">
+                    <h3 class="text-lg font-thin">📅 7 Day Forecast</h3>
+                </div>
+                <div
+                    class="p-2 mx-1 flex gap-3 bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mt-2 bg-opacity-70 text-black-100">
+                    <h3 class="text-md font-bold">Mon</h3>
+                    <p>❄️</p>
+                    <p>H: 0&deg;</p>
+                    <p>L: 0&deg;</p>
+                    <p>Percipitaion: 0%</p>
+                </div>
+                <div
+                    class="p-2 mx-1 flex gap-3 bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mt-2 bg-opacity-60 text-black-100">
+                    <h3 class="text-md font-normal">Mon</h3>
+                    <p>❄️</p>
+                    <p>H: 0&deg;</p>
+                    <p>L: 0&deg;</p>
+                    <p>Percipitaion: 0%</p>
+                </div>
+                <div
+                    class="p-2 mx-1 flex gap-3 bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mt-2 bg-opacity-50 text-black-100">
+                    <h3 class="text-md font-normal">Mon</h3>
+                    <p>❄️</p>
+                    <p>H: 0&deg;</p>
+                    <p>L: 0&deg;</p>
+                    <p>Percipitaion: 0%</p>
+                </div>
+                <div
+                    class="p-2 mx-1 flex gap-3 bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mt-2 bg-opacity-40 text-black-100">
+                    <h3 class="text-md font-normal">Mon</h3>
+                    <p>❄️</p>
+                    <p>H: 0&deg;</p>
+                    <p>L: 0&deg;</p>
+                    <p>Percipitaion: 0%</p>
+                </div>
+                <div
+                    class="p-2 mx-1 flex gap-3 bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mt-2 bg-opacity-30 text-black-100">
+                    <h3 class="text-md font-normal">Mon</h3>
+                    <p>❄️</p>
+                    <p>H: 0&deg;</p>
+                    <p>L: 0&deg;</p>
+                    <p>Percipitaion: 0%</p>
+                </div>
+                <div
+                    class="p-2 mx-1 flex gap-3 bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mt-2 bg-opacity-20 text-black-100">
+                    <h3 class="text-md font-normal">Mon</h3>
+                    <p>❄️</p>
+                    <p>H: 0&deg;</p>
+                    <p>L: 0&deg;</p>
+                    <p>Percipitaion: 0%</p>
+                </div>
+                <div
+                    class="p-2 mx-1 flex gap-3 bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mt-2 bg-opacity-10 text-black-100">
+                    <h3 class="text-md font-normal">Mon</h3>
+                    <p>❄️</p>
+                    <p>H: 0&deg;</p>
+                    <p>L: 0&deg;</p>
+                    <p>Percipitaion: 0%</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="tailwind.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
