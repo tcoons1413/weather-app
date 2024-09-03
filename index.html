@@ -34,14 +34,11 @@
     <!-- <div id="bg" class="p-2 max-w-[430px] max-h-[932px"> -->
     <div id="bg" class="p-2 max-w-[430px] max-h-[932px] bg-[url('assets/daoudi-aissa-Pe1Ol9oLc4o-unsplash.jpg')]">
         <section class="flex flex-col my-8 items-center">
-            <h1 class="text-3xl">Toronto</h1>
-            <h2 class="text-7xl"><span style="opacity: 0;">&deg;</span>30&deg;</h2>
+            <h1 id="cityCountry" class="text-3xl"></h1>
+            <h2 id="mainTemp" class="text-6xl"><span style="opacity: 0;">&deg;</span></h2>
 
-
-            <p>Type of day</p>
-            <div class="flex gap-2 justify-center">
-                <p>H: 30&deg;</p>
-                <p>L: 30&deg;</p>
+            <div class="flex flex-col gap-0 justify-center">
+                <p id="feelsLike">Feels Like: </p>
             </div>
 
         </section>
@@ -55,57 +52,7 @@
                         Sed auctor auctor
                         arcu, at fermentum dui. Maecenas</p>
                 </div>
-                <div class="flex gap-5 overflow-x-auto mx-2 custom-scrollbar text-center">
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p>Time</p>
-                        <p>⛅</p>
-                        <p>30&deg;</p>
-                    </div>
+                <div id="hourlyInfo" class="flex gap-5 overflow-x-auto mx-2 custom-scrollbar text-center">
                 </div>
             </div>
         </section>
